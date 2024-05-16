@@ -1,0 +1,11 @@
+[Unit]
+Description=Launch hostel wifi auth util
+After=network-online.target
+
+[Service]
+Type=simple
+User=yuanzix
+ExecStart=/home/yuanzix/.scripts/hostel-wifi-check.sh
+
+[Install]
+WantedBy=default.target
